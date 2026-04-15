@@ -11,8 +11,7 @@ struct TimeGuard {
 
     ~TimeGuard() {
         std::cout << "elapsed "
-                  << std::chrono::duration_cast<std::chrono::milliseconds>(Clock::now() - tp)
-                  << " ms" << std::endl;
+                  << std::chrono::duration_cast<std::chrono::milliseconds>(Clock::now() - tp) << std::endl;
     }
 
 private:
